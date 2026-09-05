@@ -90,7 +90,7 @@ export default function ProfilePage() {
                 {profile?.username?.[0]?.toUpperCase()}
               </div>
               <p className="mt-3 text-base font-semibold text-ink-950">{profile?.username}</p>
-              <p className="text-sm text-ink-600">{profile?.email}</p>
+              <p className="break-all text-sm text-ink-600">{profile?.email}</p>
             </div>
 
             <div className="mt-6 space-y-3 border-t border-paper-100 pt-5">
@@ -235,12 +235,12 @@ export default function ProfilePage() {
 
 function InfoRow({ icon: Icon, label, value }) {
   return (
-    <div className="flex items-center justify-between text-sm">
-      <span className="flex items-center gap-2 text-ink-600">
+    <div className="flex items-start justify-between gap-3 text-sm">
+      <span className="flex shrink-0 items-center gap-2 text-ink-600">
         <Icon className="h-4 w-4" strokeWidth={2} />
         {label}
       </span>
-      <span className="font-medium text-ink-950">{value ?? "-"}</span>
+      <span className="min-w-0 break-all text-right font-medium text-ink-950">{value ?? "-"}</span>
     </div>
   );
 }

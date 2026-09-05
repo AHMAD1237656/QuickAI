@@ -57,17 +57,17 @@ export default function Home() {
             QuickAI brings writing, summarizing, social media and study tools
             together in one clean workspace — built for people who move fast.
           </p>
-          <div className="mt-9 flex items-center justify-center gap-3">
+          <div className="mt-9 flex flex-col items-center justify-center gap-3 sm:flex-row">
             <Link
               href="/register"
-              className="flex items-center gap-2 rounded-xl bg-ink-950 px-6 py-3 text-sm font-semibold text-white tracking-tight shadow-card-hover transition-all duration-150 hover:bg-ink-900 active:scale-[0.98]"
+              className="flex w-full items-center justify-center gap-2 rounded-xl bg-ink-950 px-6 py-3 text-sm font-semibold text-white tracking-tight shadow-card-hover transition-all duration-150 hover:bg-ink-900 active:scale-[0.98] sm:w-auto"
             >
               Start for free
               <ArrowRight className="h-4 w-4" />
             </Link>
             <Link
               href="#tools"
-              className="rounded-xl border border-paper-200 bg-white px-6 py-3 text-sm font-semibold text-ink-800 transition hover:bg-paper-100"
+              className="w-full rounded-xl border border-paper-200 bg-white px-6 py-3 text-center text-sm font-semibold text-ink-800 transition hover:bg-paper-100 sm:w-auto"
             >
               Explore tools
             </Link>

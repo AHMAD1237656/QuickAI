@@ -6,6 +6,11 @@ html,
 body {
   padding: 0;
   margin: 0;
+  /* Safety net: no page should ever need horizontal scroll. If any
+     element is accidentally too wide on a small screen, clip it here
+     rather than let the whole page scroll sideways. */
+  overflow-x: hidden;
+  max-width: 100%;
 }
 
 body {
@@ -16,6 +21,15 @@ body {
 
 * {
   box-sizing: border-box;
+}
+
+/* Belt-and-braces: long unbroken strings (emails, URLs, tokens) should
+   wrap instead of forcing horizontal overflow on narrow screens. */
+img,
+svg,
+video {
+  max-width: 100%;
+  height: auto;
 }
 
 ::selection {

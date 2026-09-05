@@ -27,7 +27,7 @@ export default function ToolCard({ tool }) {
         <p className="mt-1 text-sm leading-relaxed text-ink-600">{tool.description}</p>
       </div>
 
-      <div className="mt-auto flex items-center gap-1.5 pt-1 text-sm font-medium text-signal-700 opacity-0 transition-opacity duration-200 group-hover:opacity-100">
+      <div className="mt-auto flex items-center gap-1.5 pt-1 text-sm font-medium text-signal-700 opacity-100 transition-opacity duration-200 lg:opacity-0 lg:group-hover:opacity-100">
         Open tool
         <ArrowRight className="h-3.5 w-3.5 transition-transform duration-200 group-hover:translate-x-0.5" />
       </div>
